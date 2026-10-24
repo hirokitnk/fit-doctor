@@ -1,0 +1,21 @@
+{
+  "name": "@fit-doctor/fixtures",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Synthetic FIT file generator for tests. Never commit real activity files.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./sdk": "./src/sdk.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@garmin/fitsdk": "^21.218.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.12"
+  }
+}

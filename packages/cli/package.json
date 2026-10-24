@@ -1,0 +1,27 @@
+{
+  "name": "@fit-doctor/cli",
+  "version": "0.0.0",
+  "description": "Diagnose and repair FIT files that Garmin Connect refuses to import",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "fit-doctor": "./dist/bin.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build -w @fit-doctor/core && npm run build && vitest run"
+  },
+  "dependencies": {
+    "@fit-doctor/core": "*"
+  },
+  "devDependencies": {
+    "@fit-doctor/fixtures": "*",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.12"
+  }
+}

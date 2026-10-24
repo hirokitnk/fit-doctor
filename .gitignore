@@ -1,0 +1,7 @@
+node_modules/
+dist/
+coverage/
+*.fit
+*.FIT
+!**/fixtures/**/*.fit
+.DS_Store
